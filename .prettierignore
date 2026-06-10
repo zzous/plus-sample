@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.pnp.cjs
+.pnp.loader.mjs
+pnpm-lock.yaml
+.vscode/
