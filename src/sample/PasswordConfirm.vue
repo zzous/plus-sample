@@ -14,8 +14,13 @@
                 <FormLine :labelText="'ID'" :required="true">
                     <div>
                         <VeeField v-slot="{ errors, handleChange }" name="id">
-                            <input type="text" class="tbl-input" v-model="values.id" @input="handleChange" placeholder="ID를 입력하세요" />
-                            <span class="error-message" v-if="errors.length">{{ errors[0] }}</span>
+                            <InputText 
+                                :inputPlaceholder="'ID을 입력하세요.'" 
+                                :inputType="'text'" 
+                                :model-value="values.projectName"
+                                :error-messages="errors"
+                                @update:model-value="handleChange"
+                            />
                         </VeeField>
                     </div>
                 </FormLine>

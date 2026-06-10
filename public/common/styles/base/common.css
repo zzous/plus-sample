@@ -1399,7 +1399,6 @@ caption,
 .ui-data-filter.sm .btn-filter-set {
   top: 15px;
 }
-
 .ui-data-filter .custom-select {
   min-width: 90px;
 }
@@ -1409,6 +1408,7 @@ caption,
   padding: 15px;
   background-color: #f7f7f7;
   border-radius: 5px;
+  display:flex
 }
 
 .ui-data-filter-more .form-item:first-of-type {

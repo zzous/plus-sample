@@ -6,7 +6,7 @@ export function useCommFunc() {
     //모달 데이터
     const $Modal = inject('$Modal');
     const dayJS = inject('dayJS');
-    const goToPage = (params) => {
+    const goToPage = (params: string) => {
         router.push(params);
     };
 
@@ -23,7 +23,7 @@ export function useCommFunc() {
      * @params
      * @url
     */
-    const exelFileDown = async (params, url) => {
+    const exelFileDown = async (params: any, url: string) => {
         console.log('파일다운로드', params, url);
         try {
             console.log(params);
